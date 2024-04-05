@@ -7,37 +7,37 @@
     <title>Webová anketa</title>
 </head>
 <body>
-    <h1>Anketa o sportu a pohybu</h1>
+    <h1>Anketa o filmech a seriálech</h1>
 <form action="/submit" method="post" class="form-container">
     <div>
-        <label for="hours">Průměrný počet hodin, které týdně věnujete sportu nebo jiné pohybové aktivitě:</label>
+        <label for="hours">Průměrný počet hodin, které týdně věnujete sledováním filmů či seriálů:</label>
         <input type="number" step="0.1" id="hours" name="hours" required>
     </div>
     
     <div>
-        <label>Vyberte si sport pro hodinu tělocviku:</label>
-        <select id="sport" name="sport">
-            <option value="atletika">Atletika</option>
-            <option value="gymnastika">Gymnastika</option>
-            <option value="plavání">Plavání</option>
-            <option value="cyklistika">Cyklistika</option>
-            <option value="lyžování">Lyžování</option>
-            <option value="fotbal">Fotbal</option>
-            <option value="volejbal">Volejbal</option>
-            <option value="florbal">Florbal</option>
-            <option value="basketbal">Basketbal</option>
+        <label>Který žánr preferujete:</label>
+        <select id="genre" name="genre">
+            <option value="sci-fi">Sci-fi</option>
+            <option value="komedie">Komedie</option>
+            <option value="horror">Horror</option>
+            <option value="thriller">Thriller</option>
+            <option value="akční">Akční</option>
+            <option value="romantické">Romantické</option>
+            <option value="drama">Drama</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="dobrodružný">Dobrodružný</option>
         </select>
     </div>
     
     <div>
-        <label for="importance">Jak velkou roli hraje sport ve vašem životě? (0 = žádnou, 5 = mimořádnou)</label>
+        <label for="importance">Jak velkou roli hrajou filmy a seriály ve vašem životě? (0 = žádnou, 5 = mimořádnou)</label>
         <input type="range" id="importance" name="importance" min="0" max="5" step="1">
         <span id="importanceValue"></span>
     </div>
     
     <div>
-        <label for="roleModel">Napište jméno vašeho sportovního idolu:</label>
-        <input type="text" id="roleModel" name="roleModel">
+        <label for="roleModel">Napište jméno vašeho oblíbeného herce:</label>
+        <input type="text" id="favActor" name="favActor">
     </div>
     
     <button type="submit">Odeslat odpovědi</button>

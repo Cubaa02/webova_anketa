@@ -15,9 +15,9 @@
             <th>Datum</th>
             <th>Čas</th>
             <th>Hodiny týdně</th>
-            <th>Zaměření TV</th>
-            <th>Důležitost sportu</th>
-            <th>Sportovní idol</th>
+            <th>Preferovaný žánr</th>
+            <th>Důležitost filmů/seriálů</th>
+            <th>Oblíbený herec</th>
         </tr>
         <% responses.forEach(function(response) { 
             const date = new Date(response.timestamp);
@@ -29,9 +29,9 @@
                 <td><%= dateString %></td>
                 <td><%= timeString %></td>
                 <td><%= response.answers.hours %></td>
-                <td><%= response.answers.sport %></td>
+                <td><%= response.answers.genre %></td>
                 <td><%= response.answers.importance %></td>
-                <td><%= response.answers.roleModel %></td>
+                <td><%= response.answers.favActor %></td>
             </tr>
         <% }); %>
     </table>
